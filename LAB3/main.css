@@ -1,0 +1,57 @@
+h1      {   width: 1020px;
+            margin: auto;
+            text-align: left;
+            align-items: center;
+            border: thin groove black;
+            background-color: gold;
+            font-size: x-large;
+            font-family: serif;
+            color: blue;}
+.title  {   
+            animation-duration: 2s;
+            animation-name: moving; }
+@keyframes moving
+{
+    0% 
+    {   
+         transform: translate(1020px);
+    }
+    100%
+    {
+        transform: translate(0px);
+    }
+}
+p       {   width: 1020px;
+            margin: auto;
+            text-align: center; }
+div     {   width: 1020px;
+            margin: auto; }
+.navi   {   width: 1020px;
+            margin: auto;
+            text-align: center;
+            background-color: gold;
+            font-size: large; }
+.button {   font-size: large;
+            text-align: center;
+            border: thin solid black;
+            width: 300px;
+            height: 40px;
+            margin: auto;
+            background-color: yellow; }
+.item  {    position:relative;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            border: 1px groove black; }
+.item1-img  {
+            transition: transform 2s; }
+.item1-img:hover {
+            transform: rotate(360deg); }
+.item2-img  {
+            margin: auto;
+            position: absolute;
+            max-width:100%; max-height:100%;
+            top:0; bottom:0; left:0; right:0;
+            transition: transform 2s; }
+.item2-img:hover{
+            transform: scale(2); }
