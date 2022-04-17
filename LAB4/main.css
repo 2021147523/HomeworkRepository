@@ -1,0 +1,86 @@
+h1      {   width: 1020px;
+            margin: auto;
+            text-align: left;
+            align-items: center;
+            border: thin groove black;
+            background-color: gold;
+            font-size: x-large;
+            font-family: serif;
+            color: blue;}
+.title  {   
+            animation-duration: 2s;
+            animation-name: moving; }
+@keyframes moving
+{
+    0% 
+    {   
+         transform: translate(1020px);
+    }
+    100%
+    {
+        transform: translate(0px);
+    }
+}
+p       {   max-width: 1020px;
+            margin: auto;
+            text-align: center; }
+div     {   max-width: 1020px;
+            margin: auto; }
+.navi   {   max-width: 1020px;
+            margin: auto;
+            text-align: center;
+            background-color: gold;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            font-size: large; }
+.button {   font-size: large;
+            text-align: center;
+            border: thin solid black;
+            width: 300px;
+            height: 40px;
+            margin: auto;
+            background-color: yellow; }
+.contentbox {
+            max-width: 1020px;
+            display: flex;
+            flex-direction: column; }
+.itembox    {
+            max-width: 1020px;
+            display: flex;
+            flex-wrap: nowrap; }
+.item  {    position: relative;
+            flex: 25%;
+            max-width: 25%;
+            border: 1px groove black; }
+.item-img  {
+            margin: auto;
+            transition: transform 2s; }
+.item-img:hover {
+            transform: rotate(360deg); }
+.content    {
+            border: 1px groove black; }
+@media (max-width: 800px)   {
+    .itembox {
+            flex-wrap: wrap;
+    }
+    .item { position: relative;
+            flex: 48%;
+            max-width: 48%;
+            border: 1px groove black; }
+    .navi {
+        flex-direction: column; }
+}
+@media (max-width: 480px)   {
+    .itembox {
+            flex-wrap: wrap;
+    }
+    .item { position: relative;
+            flex: 100%;
+            max-width: 100%;
+            flex-direction: column;
+            border: 1px groove black; }
+    .navi {
+        flex-direction: column; }
+}
